@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import { Form } from 'vee-validate';
 import { passportFormSchema } from '../validations/passportFormSchema';
+import { validate } from '../validations/vestValidation';
 import GenderField from './fields/GenderField.vue';
 import BirthdayField from './fields/BirthdayField.vue';
 import LastNameField from './fields/LastNameField.vue';
@@ -15,7 +16,7 @@ const handleSubmit = () => {};
   <div class="bg-gray-100 p-6">
     <Form
       @submit="handleSubmit"
-      :validation-schema="passportFormSchema"
+      :validation-schema="validate"
       :initial-values="{ works: [] }"
     >
       <div class="md:grid md:grid-cols-3 md:gap-6">

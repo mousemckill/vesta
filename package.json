@@ -11,7 +11,7 @@
     "@vee-validate/i18n": "^4.6.2",
     "@vee-validate/rules": "^4.6.2",
     "vee-validate": "^4.6.2",
-    "vest": "^4.4.2",
+    "vest": "^4.6.4",
     "vue": "^3.2.25",
     "yup": "^0.32.11"
   },
